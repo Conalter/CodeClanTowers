@@ -18,4 +18,9 @@ public class ConferenceTest {
        assertEquals("JavaRoom", conference.getName());
    }
 
+   @Test
+    public void getdailyRate(){
+       assertEquals(500, conference.getdailyRate());
+   }
+
 }

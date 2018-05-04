@@ -15,9 +15,9 @@ public class BedroomTest {
 
     }
 
-    @Test
-    public void roomCapacity(){
-        assertEquals(2, bedroom.numberOfGuests());
-    }
+//    @Test
+//    public void roomCapacity(){
+//        assertEquals(2, bedroom.numberOfGuests());
+//    }
 
 }

@@ -17,4 +17,8 @@ public class Conference extends Room {
         return name;
     }
 
+    public int getdailyRate(){
+        return dailyRate;
+    }
+
 }
