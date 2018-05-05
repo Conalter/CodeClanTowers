@@ -19,8 +19,19 @@ public class ConferenceTest {
    }
 
    @Test
-    public void getdailyRate(){
-       assertEquals(500, conference.getdailyRate());
+    public void getDailyRate(){
+       assertEquals(500, conference.getDailyRate());
    }
+
+   @Test
+    public void getCapacity(){
+       assertEquals(50, conference.getCapacity());
+   }
+
+//   @Test
+//    public int canAddGuests(){
+//       conference.addGuest(1);
+//       assertEquals(1, conference.getGuests());
+//   }
 
 }

@@ -17,8 +17,13 @@ public class Conference extends Room {
         return name;
     }
 
-    public int getdailyRate(){
+    public int getDailyRate(){
         return dailyRate;
     }
+
+    public int getCapacity(){
+        return super.capacity;
+    }
+
 
 }
