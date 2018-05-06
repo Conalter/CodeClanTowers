@@ -25,5 +25,4 @@ public class Conference extends Room {
         return super.capacity;
     }
 
-
 }

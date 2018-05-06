@@ -1,3 +1,4 @@
+import people.Guest;
 import room.Conference;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,6 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class ConferenceTest {
 
     Conference conference;
+    Guest guest;
 
    @Before
     public void before(){
@@ -28,10 +30,18 @@ public class ConferenceTest {
        assertEquals(50, conference.getCapacity());
    }
 
-//   @Test
-//    public int canAddGuests(){
-//       conference.addGuest(1);
-//       assertEquals(1, conference.getGuests());
-//   }
+   @Test
+    public void canAddGuestToConference(){
+       conference.addGuest(guest);
+       assertEquals(1, conference.getGuests().size());
+   }
+
+   @Test
+    public void canRemoveGuestFromConfernece(){
+       conference.addGuest(guest);
+       assertEquals(1, conference.getGuests().size());
+       conference.removeGuest(guest);
+       assertEquals(0, conference.getGuests().size());
+   }
 
 }
